@@ -1,4 +1,5 @@
 import pyqrcode
+import png
 from pyqrcode import QRCode
 
 
@@ -11,3 +12,4 @@ url = pyqrcode.create(link)
 
 # Create and save
 url.svg(saveAs+".svg", scale = size)
+url.png(saveAs+".png",scale = size)
